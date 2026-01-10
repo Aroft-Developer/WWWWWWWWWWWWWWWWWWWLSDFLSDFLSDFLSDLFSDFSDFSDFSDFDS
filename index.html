@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Météo</title>
+  <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1e1e1e">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="loader">
+  <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24"  >
+<!--Boxicons v3.0.7 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M12 18a2 2 0 1 0 0 4 2 2 0 1 0 0-4m0-16a2 2 0 1 0 0 4 2 2 0 1 0 0-4M7.76 19.07c-.78.78-2.05.78-2.83 0s-.78-2.05 0-2.83 2.05-.78 2.83 0 .78 2.05 0 2.83M19.07 7.76c-.78.78-2.05.78-2.83 0s-.78-2.05 0-2.83 2.05-.78 2.83 0 .78 2.05 0 2.83M4 14c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2m16 0c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2M4.93 7.76c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0 .78 2.05 0 2.83-2.05.78-2.83 0m11.31 11.31c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0 .78 2.05 0 2.83-2.05.78-2.83 0"></path>
+</svg>
+</div>
+
+<div class="app">
+
+  <!-- 🔝 HAUT -->
+  <div class="top fade">
+    <div class="location-icon">
+      <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="#777777" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.7 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M12 2c-4.41 0-8 3.59-8 8-.03 6.44 7.12 11.6 7.42 11.82.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8m0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4"></path>
+</svg>
+    </div>
+    <div id="city">Loading...</div>
+  </div>
+
+  <!-- 🟡 MILIEU -->
+  <canvas
+    id="dotlottie-canvas"
+    class="fade delay-2"
+    width="240"
+    height="240"
+    style="width:260px; height:260px;">
+  </canvas>
+
+  <!-- 🔻 BAS -->
+  <div id="temp" class="fade delay-3">..°</div>
+
+</div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

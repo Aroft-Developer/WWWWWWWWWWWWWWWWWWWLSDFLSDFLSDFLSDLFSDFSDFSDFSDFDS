@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  background: #1e1e1e;
+  color: #777777;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;              /* 🔥 PAS min-height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;                 /* 🔥 PAS de padding vertical */
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 100px;
+}
+
+.location-icon svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.8;
+
+}
+
+#city {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#dotlottie-canvas {
+  display: block;
+}
+
+#temp {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 150px;
+}
+
+/* Animation de base */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Quand visible */
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Délais */
+.delay-2 {
+  transition-delay: 0.3s;
+}
+
+.delay-3 {
+  transition-delay: 0.6s;
+}
+
+/* 🔄 LOADER */
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* 🔄 Le SVG tourne */
+#loader svg {
+  width: 72px;
+  height: 72px;
+  fill: #777;
+  animation: rotate 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
