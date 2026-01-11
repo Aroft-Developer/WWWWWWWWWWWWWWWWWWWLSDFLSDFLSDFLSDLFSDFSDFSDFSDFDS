@@ -41,10 +41,47 @@ body {
   display: block;
 }
 
+/* 🔻 BAS */
+.bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 60px;
+  margin-bottom: 150px;
+}
+
+/* Température */
 #temp {
   font-size: 56px;
   font-weight: 700;
-  margin-bottom: 150px;
+  line-height: 1;
+}
+
+/* Vent */
+.wind {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+/* Chiffre du vent */
+#wind-value {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+/* km/h très petit */
+.wind-unit {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-left: 2px;
+}
+
+/* Icône vent */
+.wind-icon svg {
+  width: 45px;
+  height: 45px;
+  fill: #777777;
+  margin-left: 0px;
 }
 
 /* Animation de base */
