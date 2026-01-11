@@ -22,11 +22,10 @@
   <!-- 🔝 HAUT -->
   <div class="top fade">
     <div class="location-icon">
-      <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-fill="#777777" viewBox="0 0 24 24" >
-<!--Boxicons v3.0.7 https://boxicons.com | License  https://docs.boxicons.com/free-->
-<path d="M12 2c-4.41 0-8 3.59-8 8-.03 6.44 7.12 11.6 7.42 11.82.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8m0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4"></path>
-</svg>
+      <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  fill="#777777" viewBox="0 0 24 24" >
+      <!--Boxicons v3.0.7 https://boxicons.com | License  https://docs.boxicons.com/free-->
+        <path d="M12 2c-4.41 0-8 3.59-8 8-.03 6.44 7.12 11.6 7.42 11.82.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8m0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4"></path>
+      </svg>
     </div>
     <div id="city">Loading...</div>
   </div>
@@ -41,10 +40,19 @@ fill="#777777" viewBox="0 0 24 24" >
   </canvas>
 
   <!-- 🔻 BAS -->
-  <div id="temp" class="fade delay-3">..°</div>
+  <div class="bottom fade delay-3">
+    <div id="temp">..°</div>
+
+    <div class="wind">
+      <span id="wind-value">--</span>
+      <span class="wind-unit">km/h</span>
+
+    </div>
+  </div>
+
 
 </div>
 
-  <script type="module" src="js/app.js"></script>
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
